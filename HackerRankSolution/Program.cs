@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using HackerRankSolution.Stacks_and_Queues;
 
 namespace HackerRankSolution
 {
@@ -6,7 +8,17 @@ namespace HackerRankSolution
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int t = Convert.ToInt32(Console.ReadLine());
+
+            for (int tItr = 0; tItr < t; tItr++)
+            {
+                string s = Console.ReadLine();
+
+                string result = SolutionForStacksAndQueues.IsBalanced(s);
+
+                Console.WriteLine(result);
+            }
+
         }
     }
 }
