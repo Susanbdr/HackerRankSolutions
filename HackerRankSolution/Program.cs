@@ -7,17 +7,21 @@ namespace HackerRankSolution
     {
         static void Main(string[] args)
         {
-            int t = Convert.ToInt32(Console.ReadLine());
-
-            for (int tItr = 0; tItr < t; tItr++)
+            var item = Convert.ToInt32(Console.ReadLine());
+            var queue = new QueuesATaleOfTwoStacks();
+            for (var i = 1; i <= item; i++)
             {
-                string s = Console.ReadLine();
+                var input = Console.ReadLine()?.Split(' ');
+                
+                if(Convert.ToInt32(input[0]) == 1)
+                    queue.Enqueue(Convert.ToInt32(input[1]));
 
-                string result = BalancedBrackets.IsBalanced(s);
+                if (Convert.ToInt32(input[0]) == 2)
+                    queue.Dequeue();
 
-                Console.WriteLine(result);
+                if (Convert.ToInt32(input[0]) == 3)
+                    queue.Peek();
             }
-
         }
     }
 }
