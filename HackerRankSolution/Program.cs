@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using HackerRankSolution.Stacks_and_Queues;
 
 namespace HackerRankSolution
@@ -14,7 +13,7 @@ namespace HackerRankSolution
             {
                 string s = Console.ReadLine();
 
-                string result = SolutionForStacksAndQueues.IsBalanced(s);
+                string result = BalancedBrackets.IsBalanced(s);
 
                 Console.WriteLine(result);
             }

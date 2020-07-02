@@ -4,10 +4,15 @@ using System.Text;
 
 namespace HackerRankSolution.Stacks_and_Queues
 {
-    public class SolutionForStacksAndQueues
+    public class BalancedBrackets
     {
         private static readonly List<char> LeftBrackets = new List<char> { '{', '(', '[' };
         private static readonly List<char> RightBrackets = new List<char> { '}', ')', ']' };
+        /// <summary>
+        /// Balanced Brackets
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public static string IsBalanced(string s)
         {
             var stack = new Stack<char>();
